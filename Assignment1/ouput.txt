@@ -1,0 +1,65 @@
+Output:
+Hello! I am the loan calculator! What would you like to calculate today?
+Enter 'AL' to calculate an Amortized Loan 
+Enter 'LP' to calculate a Loan Payoff 
+
+#If the user enters a false input
+Invalid input
+Enter 'AL' to calculate an Amortized loan
+Enter 'LP' to calculate a Loan Payoff
+
+#If the user enters 'AL':
+AL
+---------------------------------------------------------------------------------
+Enter the loan amount in CAD: 10000
+Enter a loan term in years: 1
+Enter an interest rate (%): 2
+---------------------------------------------------------------------------------
+The following table are the possible inputs for the next questions:
+
+Annually -> 1
+Semi-Annually -> 2
+Quarterly -> 4
+Monthly-> 12
+Semi-Monthly -> 24
+Bi-Weekly -> 26
+Weekly -> 52
+Daily -> 365
+---------------------------------------------------------------------------------
+What will be the compounding periods per year?
+12
+What will be your payment periods per year?
+4
+---------------------------------------------------------------------------------
+You will make 4 payments of $2531.38 to pay off your loan :)
+
+#If the compounding periods and payment periods have invalid inputs:
+---------------------------------------------------------------------------------
+What will be the compounding periods per year?
+3
+What will be your payment periods per year?
+1
+---------------------------------------------------------------------------------
+Invalid input!
+What will be the compounding periods per year?
+
+#If the user enter 'LP':
+LP
+---------------------------------------------------------------------------------
+Enter the loan amount in CAD: 10000
+Enter an interest rate (%): 8
+Enter the expected monthly payment in CAD (must be at least 0.5% of the loan payment): 500
+---------------------------------------------------------------------------------
+It will take 21 months or 1.75 years to pay off your loan :)
+
+#if the user enters expected monthly payments less than 0.5% of the loan
+Enter the expected monthly payment in CAD (must be at least 0.5% of the loan payment): 100
+---------------------------------------------------------------------------------
+Too small! Enter the expected monthly payment in CAD (must be at least 0.5% of the loan):
+
+#If you need to check if the answers are correct then use the following sites to double check
+Amortized Loan: 
+https://www.calculator.net/loan-calculator.html
+
+Loan Payoff Calculator *choose calculalte monthly payment*
+https://www.moneyunder30.com/loan-payoff-calculator
